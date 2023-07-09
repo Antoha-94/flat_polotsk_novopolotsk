@@ -1,3 +1,8 @@
+Описание:
+При публикации нового поста в группе vkontakte, на сервер отправляется Callback API и пост записывается в БД.
+Затем по расписанию crone - запись из БД публикуется в telegram канале, странице facebook, группе odnoklassniki.
+
+Установка:
 1.Git clone git@github.com:Antoha-94/flat_polotsk_novopolotsk
 
 2.Делаем дубликат файла .env.example из корня. Переименовываем в .env и редактируем под себя.
