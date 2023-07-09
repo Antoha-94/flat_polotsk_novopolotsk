@@ -1,15 +1,18 @@
 1.Git clone git@github.com:Antoha-94/flat_polotsk_novopolotsk
-2.Делаем дубликат файла .env.example из корня. Переименовываем в .env и редактируем под себя.
-3.Развертываем энваромент, перед этим редактируем файлы конфига nginx, ДЛЯ ЛОКАЛИ ЭТОТ config/nginx/nginx.conf, ДЛЯ СЕРВЕРА config/nginx.web/nginx.conf. Там по сути server_name только на свой изменить (localhost, или имя домена, если на сервере)
-4. docker compose exec php bash
-  composer install 
 
-5.Собираемся: 
+2.Делаем дубликат файла .env.example из корня. Переименовываем в .env и редактируем под себя.
+
+3.Развертываем энваромент, перед этим редактируем файлы конфига nginx, ДЛЯ ЛОКАЛИ ЭТОТ config/nginx/nginx.conf, ДЛЯ СЕРВЕРА config/nginx.web/nginx.conf. Там по сути server_name только на свой изменить (localhost, или имя домена, если на сервере)
+
+4. docker compose exec php bash
+5. В php контейнере выподнить: composer install 
+
+6.Собираемся: 
 Локально выполняем команду: docker-compose up -d --build
 
-6.Делаем дубликат файла /app/config.example.ini . Переименовываем в config.ini и редактируем под себя. В конфиге креды подключения к БД, токены от VK,Telegram,Facebook,OK.
+7.Делаем дубликат файла /app/config.example.ini . Переименовываем в config.ini и редактируем под себя. В конфиге креды подключения к БД, токены от VK,Telegram,Facebook,OK.
 
-7.Размечаем таблицу fromvk в БД:
+8.Размечаем таблицу fromvk в БД:
 CREATE TABLE `fromvk` (
   `id` int(11) NOT NULL,
   `text` text DEFAULT NULL,
