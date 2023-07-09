@@ -1,0 +1,482 @@
+22:26:27.135 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+22:26:27.152 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+22:26:29.196 INFO [NodeOptions.getSessionFactories] - Detected 1 available processors
+22:26:29.222 INFO [NodeOptions.discoverDrivers] - Driver(s) already present on the host: 1
+22:26:29.310 INFO [NodeOptions.report] - Adding Chrome for {"browserName": "chrome","goog:chromeOptions": {"args": [ "--remote-allow-origins=*" ] }, "platformName": "linux" } 1 times (Host)
+22:26:29.355 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+22:26:29.455 INFO [GridModel.setAvailability] - Switching Node 652d9713-7e71-4f82-ab96-b57099a4e8b4 (uri: http://172.18.0.3:4444) from DOWN to UP
+22:26:29.456 INFO [LocalDistributor.add] - Added node 652d9713-7e71-4f82-ab96-b57099a4e8b4 at http://172.18.0.3:4444. Health check every 120s
+22:26:29.821 INFO [Standalone.execute] - Started Selenium Standalone 4.9.1 (revision eb2032df7f): http://172.18.0.3:4444
+22:27:18.196 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+ [Capabilities {browserName: chrome}]
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 12985
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1685399238.269][SEVERE]: bind() failed: Cannot assign requested address (99)
+22:27:19.222 WARN [DriverServiceSessionFactory.apply] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:27:19.265 WARN [SeleniumSpanExporter$1.lambda$export$1] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:27:19.272 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:27:19.282 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "9029116bac690e5d68f48615f8d4b363","eventTime": 1685399239223612959,"eventName": "exception","attributes": {"driver.url": "http:\u002f\u002flocalhost:12985","exception.message": "Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.node.config.DriverServiceSessionFactory","session.capabilities": "{\"goog:chromeOptions\": {\"args\": [  \"--remote-allow-origins=*\"  ]  },  \"browserName\": \"chrome\"  }\n"}}
+
+22:27:19.286 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "9029116bac690e5d68f48615f8d4b363","eventTime": 1685399239283762290,"eventName": "Unable to create session with the driver","attributes": {"current.session.count": 0,"logger": "org.openqa.selenium.grid.node.local.LocalNode","session.request.capabilities": "Capabilities {browserName: chrome}","session.request.downstreamdialect": "[W3C]"}}
+
+22:27:19.295 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "9029116bac690e5d68f48615f8d4b363","eventTime": 1685399238194846872,"eventName": "Session request received by the Distributor","attributes": {"logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:27:19.296 WARN [SeleniumSpanExporter$1.lambda$export$1] - Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:27:19.298 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:27:19.309 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "9029116bac690e5d68f48615f8d4b363","eventTime": 1685399239290275024,"eventName": "exception","attributes": {"exception.message": "Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:27:19.332 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "9029116bac690e5d68f48615f8d4b363","eventTime": 1685399239327713029,"eventName": "HTTP request execution complete","attributes": {"http.flavor": 1,"http.handler_class": "org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue","http.host": "localhost:4444","http.method": "POST","http.request_content_length": "122","http.scheme": "HTTP","http.status_code": 500,"http.target": "\u002fsession"}}
+
+22:30:50.085 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+22:30:50.109 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+22:30:52.103 INFO [NodeOptions.getSessionFactories] - Detected 1 available processors
+22:30:52.129 INFO [NodeOptions.discoverDrivers] - Driver(s) already present on the host: 1
+22:30:52.209 INFO [NodeOptions.report] - Adding Chrome for {"browserName": "chrome","goog:chromeOptions": {"args": [ "--remote-allow-origins=*" ] }, "platformName": "linux" } 1 times (Host)
+22:30:52.264 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+22:30:52.364 INFO [GridModel.setAvailability] - Switching Node de0d1a71-0f8b-4b1e-8f6d-351639677115 (uri: http://172.18.0.3:4444) from DOWN to UP
+22:30:52.366 INFO [LocalDistributor.add] - Added node de0d1a71-0f8b-4b1e-8f6d-351639677115 at http://172.18.0.3:4444. Health check every 120s
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.grid.Bootstrap.runMain(Bootstrap.java:77)
+	at org.openqa.selenium.grid.Bootstrap.main(Bootstrap.java:70)
+Caused by: org.openqa.selenium.netty.server.ServerBindException: Could not bind to address or port is already in use. Host 0.0.0.0, Port 4444
+	at org.openqa.selenium.netty.server.NettyServer.start(NettyServer.java:169)
+	at org.openqa.selenium.netty.server.NettyServer.start(NettyServer.java:54)
+	at org.openqa.selenium.grid.commands.Standalone.execute(Standalone.java:254)
+	at org.openqa.selenium.grid.TemplateGridCommand.lambda$configure$4(TemplateGridCommand.java:129)
+	at org.openqa.selenium.grid.Main.launch(Main.java:83)
+	at org.openqa.selenium.grid.Main.go(Main.java:57)
+	at org.openqa.selenium.grid.Main.main(Main.java:42)
+	... 6 more
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:459)
+	at java.base/sun.nio.ch.Net.bind(Net.java:448)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.handler.logging.LoggingHandler.bind(LoggingHandler.java:230)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:602)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+22:31:23.803 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+ [Capabilities {browserName: chrome}]
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 21595
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1685399483.832][SEVERE]: bind() failed: Cannot assign requested address (99)
+22:31:24.008 WARN [DriverServiceSessionFactory.apply] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:31:24.026 WARN [SeleniumSpanExporter$1.lambda$export$1] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:31:24.026 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:31:24.028 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "4e85bbdeaebe6b6e24439d369344323f","eventTime": 1685399484010740987,"eventName": "exception","attributes": {"driver.url": "http:\u002f\u002flocalhost:21595","exception.message": "Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.node.config.DriverServiceSessionFactory","session.capabilities": "{\"goog:chromeOptions\": {\"args\": [  \"--remote-allow-origins=*\"  ]  },  \"browserName\": \"chrome\"  }\n"}}
+
+22:31:24.033 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "4e85bbdeaebe6b6e24439d369344323f","eventTime": 1685399484030295207,"eventName": "Unable to create session with the driver","attributes": {"current.session.count": 0,"logger": "org.openqa.selenium.grid.node.local.LocalNode","session.request.capabilities": "Capabilities {browserName: chrome}","session.request.downstreamdialect": "[W3C]"}}
+
+22:31:24.041 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "4e85bbdeaebe6b6e24439d369344323f","eventTime": 1685399483802697930,"eventName": "Session request received by the Distributor","attributes": {"logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:31:24.041 WARN [SeleniumSpanExporter$1.lambda$export$1] - Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:31:24.041 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:31:24.043 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "4e85bbdeaebe6b6e24439d369344323f","eventTime": 1685399484040078610,"eventName": "exception","attributes": {"exception.message": "Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:31:24.062 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "4e85bbdeaebe6b6e24439d369344323f","eventTime": 1685399484049355241,"eventName": "HTTP request execution complete","attributes": {"http.flavor": 1,"http.handler_class": "org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue","http.host": "localhost:4444","http.method": "POST","http.request_content_length": "122","http.scheme": "HTTP","http.status_code": 500,"http.target": "\u002fsession"}}
+
+22:32:01.664 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+ [Capabilities {browserName: chrome}]
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 12869
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1685399521.707][SEVERE]: bind() failed: Cannot assign requested address (99)
+ChromeDriver was started successfully.
+22:32:01.876 WARN [DriverServiceSessionFactory.apply] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:32:01.894 WARN [SeleniumSpanExporter$1.lambda$export$1] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:32:01.895 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:32:01.902 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "15e8872096afbf40b4e42f0122e7f04c","eventTime": 1685399521876905551,"eventName": "exception","attributes": {"driver.url": "http:\u002f\u002flocalhost:12869","exception.message": "Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.node.config.DriverServiceSessionFactory","session.capabilities": "{\"goog:chromeOptions\": {\"args\": [  \"--remote-allow-origins=*\"  ]  },  \"browserName\": \"chrome\"  }\n"}}
+
+22:32:01.904 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "15e8872096afbf40b4e42f0122e7f04c","eventTime": 1685399521903064354,"eventName": "Unable to create session with the driver","attributes": {"current.session.count": 0,"logger": "org.openqa.selenium.grid.node.local.LocalNode","session.request.capabilities": "Capabilities {browserName: chrome}","session.request.downstreamdialect": "[W3C]"}}
+
+22:32:01.910 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "15e8872096afbf40b4e42f0122e7f04c","eventTime": 1685399521663453749,"eventName": "Session request received by the Distributor","attributes": {"logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:32:01.910 WARN [SeleniumSpanExporter$1.lambda$export$1] - Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:32:01.911 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:32:01.912 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "15e8872096afbf40b4e42f0122e7f04c","eventTime": 1685399521905191155,"eventName": "exception","attributes": {"exception.message": "Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:32:01.917 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "15e8872096afbf40b4e42f0122e7f04c","eventTime": 1685399521915961048,"eventName": "HTTP request execution complete","attributes": {"http.flavor": 1,"http.handler_class": "org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue","http.host": "localhost:4444","http.method": "POST","http.request_content_length": "122","http.scheme": "HTTP","http.status_code": 500,"http.target": "\u002fsession"}}
+
+22:38:23.332 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+ [Capabilities {browserName: chrome}]
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 4013
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1685399903.348][SEVERE]: bind() failed: Cannot assign requested address (99)
+22:38:23.523 WARN [DriverServiceSessionFactory.apply] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:38:23.542 WARN [SeleniumSpanExporter$1.lambda$export$1] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:38:23.543 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:38:23.544 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "d38bafe1cdd6ccbe6cb3c96cc443bdc6","eventTime": 1685399903522693708,"eventName": "exception","attributes": {"driver.url": "http:\u002f\u002flocalhost:4013","exception.message": "Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.node.config.DriverServiceSessionFactory","session.capabilities": "{\"goog:chromeOptions\": {\"args\": [  \"--remote-allow-origins=*\"  ]  },  \"browserName\": \"chrome\"  }\n"}}
+
+22:38:23.545 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "d38bafe1cdd6ccbe6cb3c96cc443bdc6","eventTime": 1685399903543965233,"eventName": "Unable to create session with the driver","attributes": {"current.session.count": 0,"logger": "org.openqa.selenium.grid.node.local.LocalNode","session.request.capabilities": "Capabilities {browserName: chrome}","session.request.downstreamdialect": "[W3C]"}}
+
+22:38:23.552 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "d38bafe1cdd6ccbe6cb3c96cc443bdc6","eventTime": 1685399903331331956,"eventName": "Session request received by the Distributor","attributes": {"logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:38:23.552 WARN [SeleniumSpanExporter$1.lambda$export$1] - Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:38:23.554 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:38:23.555 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "d38bafe1cdd6ccbe6cb3c96cc443bdc6","eventTime": 1685399903545181158,"eventName": "exception","attributes": {"exception.message": "Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:38:23.564 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "d38bafe1cdd6ccbe6cb3c96cc443bdc6","eventTime": 1685399903562868753,"eventName": "HTTP request execution complete","attributes": {"http.flavor": 1,"http.handler_class": "org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue","http.host": "localhost:4444","http.method": "POST","http.request_content_length": "122","http.scheme": "HTTP","http.status_code": 500,"http.target": "\u002fsession"}}
+
+22:42:17.992 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+ [Capabilities {browserName: chrome}]
+Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 28079
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1685400138.016][SEVERE]: bind() failed: Cannot assign requested address (99)
+ChromeDriver was started successfully.
+22:42:18.190 WARN [DriverServiceSessionFactory.apply] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:42:18.208 WARN [SeleniumSpanExporter$1.lambda$export$1] - Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:42:18.209 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:42:18.210 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "21bd30a2bce1b1aaf521e4c6569d5288","eventTime": 1685400138192458876,"eventName": "exception","attributes": {"driver.url": "http:\u002f\u002flocalhost:28079","exception.message": "Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:152)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.node.config.DriverServiceSessionFactory","session.capabilities": "{\"goog:chromeOptions\": {\"args\": [  \"--remote-allow-origins=*\"  ]  },  \"browserName\": \"chrome\"  }\n"}}
+
+22:42:18.213 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "21bd30a2bce1b1aaf521e4c6569d5288","eventTime": 1685400138210915751,"eventName": "Unable to create session with the driver","attributes": {"current.session.count": 0,"logger": "org.openqa.selenium.grid.node.local.LocalNode","session.request.capabilities": "Capabilities {browserName: chrome}","session.request.downstreamdialect": "[W3C]"}}
+
+22:42:18.221 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "21bd30a2bce1b1aaf521e4c6569d5288","eventTime": 1685400137992429908,"eventName": "Session request received by the Distributor","attributes": {"logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:42:18.221 WARN [SeleniumSpanExporter$1.lambda$export$1] - Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+22:42:18.221 WARN [SeleniumSpanExporter$1.lambda$export$1] - org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'b96c5cb40d2a', ip: '172.18.0.3'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)
+	at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)
+	at org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)
+	at org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)
+	at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+22:42:18.221 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "21bd30a2bce1b1aaf521e4c6569d5288","eventTime": 1685400138220401906,"eventName": "exception","attributes": {"exception.message": "Unable to create session: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown","exception.stacktrace": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location \u002fusr\u002fbin\u002fgoogle-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) \nHost info: host: 'b96c5cb40d2a', ip: '172.18.0.3'\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\nBuild info: version: '4.9.1', revision: 'eb2032df7f'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-72-generic', java.version: '11.0.18'\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:208)\n\tat org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply(DriverServiceSessionFactory.java:70)\n\tat org.openqa.selenium.grid.node.local.SessionSlot.apply(SessionSlot.java:147)\n\tat org.openqa.selenium.grid.node.local.LocalNode.newSession(LocalNode.java:441)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession(LocalDistributor.java:645)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession(LocalDistributor.java:564)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest(LocalDistributor.java:818)\n\tat org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1(LocalDistributor.java:779)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base\u002fjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base\u002fjava.lang.Thread.run(Thread.java:829)\n","exception.type": "org.openqa.selenium.SessionNotCreatedException","logger": "org.openqa.selenium.grid.distributor.local.LocalDistributor","request.payload": "[Capabilities {browserName: chrome}]"}}
+
+22:42:18.226 WARN [SeleniumSpanExporter$1.lambda$export$3] - {"traceId": "21bd30a2bce1b1aaf521e4c6569d5288","eventTime": 1685400138225389114,"eventName": "HTTP request execution complete","attributes": {"http.flavor": 1,"http.handler_class": "org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue","http.host": "localhost:4444","http.method": "POST","http.request_content_length": "122","http.scheme": "HTTP","http.status_code": 500,"http.target": "\u002fsession"}}
+

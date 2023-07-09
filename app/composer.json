@@ -1,0 +1,12 @@
+{
+    "require": {
+        "irazasyed/telegram-bot-sdk": "v3.9.0",
+        "telegram-bot/api": "2.3.1",
+	"facebook/graph-sdk": "^5.4",
+        "symfony/var-dumper": "^5.4",
+	"facebook/webdriver": "dev-master",
+	"php-webdriver/webdriver": "^1.8",
+	"bogdaan/viber-bot-php": "dev-master"
+	
+    }
+}

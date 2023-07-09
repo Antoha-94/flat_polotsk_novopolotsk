@@ -1,0 +1,5 @@
+/.idea/
+/mysql/
+.env
+/app/config.ini
+/app/vendor/
