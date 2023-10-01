@@ -41,9 +41,6 @@ RUN docker-php-ext-install bcmath \
     mysqli \
     ;
 
-RUN usermod -u 1000 www-data && groupmod -g 1000 www-data
-USER 1000:1000
-
 COPY ./php.ini /usr/local/etc/php/conf.d/php.ini
 
 CMD ["php-fpm"]
