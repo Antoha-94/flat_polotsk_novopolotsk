@@ -17,7 +17,7 @@
 
 7.Делаем дубликат файла /app/config.example.ini . Переименовываем в config.ini и редактируем под себя. В конфиге креды подключения к БД, токены от VK,Telegram,Facebook,OK.
 
-8.Размечаем таблицу fromvk в БД:
+8.Размечаем таблицу fromvk в БД wallposts:
 CREATE TABLE `fromvk` (
   `id` int(11) NOT NULL,
   `text` text DEFAULT NULL,
@@ -29,4 +29,4 @@ CREATE TABLE `fromvk` (
   `IsRepostToViber` tinyint(1) DEFAULT 0,
   `IsRepostToOK` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
+9.Добавляем индекс: ALTER TABLE `wallposts`.`fromvk` ADD UNIQUE `idIndex` (`id`) USING BTREE;
