@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Квартиры Полоцк/Новополоцк</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo parse_ini_file('config.ini', true)['GoogleAnalytics']['tracking_id']; ?>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '<?php echo parse_ini_file('config.ini', true)['GoogleAnalytics']['tracking_id']; ?>');
+    </script>
 </head>
 <body>
     <!-- Хедер -->
     <img src="https://sun9-52.userapi.com/c626617/v626617449/369b0/HwtD8-I_Fss.jpg" alt="Хедер" width="100%">
     
     <h1>Квартиры Полоцк/Новополоцк</h1>
-
 
     <p>Мы в соц.сетях и мессенджерах:</p>
     
