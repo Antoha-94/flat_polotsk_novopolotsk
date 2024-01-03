@@ -37,7 +37,10 @@ if ($result->num_rows > 0) {
     $signer_id = $row['signer_id'];
 
     // Формирование текста сообщения
-    $message_text = $text . "\nАвтор: " . $signer_id;
+    $message_text = $text;
+    if (!empty($signer_id)) {
+        $message_text .= "\nАвтор: " . $signer_id;
+    }
 
     $uploadedImages = []; // Массив для хранения загруженных картинок
 

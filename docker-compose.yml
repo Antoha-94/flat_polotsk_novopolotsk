@@ -9,7 +9,9 @@ services:
             - './app:/var/www/html'
         depends_on:
             - mariadb
-
+        networks:
+            - nginx_to_apache
+            
     nginx:
         image: nginx:latest
         container_name: nginx
@@ -21,6 +23,9 @@ services:
         volumes:
             - './app:/var/www/html'
             - './config/nginx:/etc/nginx/conf.d'
+            - '/etc/letsencrypt/:/etc/letsencrypt/'
+        networks:
+            - nginx_to_apache 
 
     mariadb:
         image: mariadb:10.4
@@ -34,17 +39,21 @@ services:
             - MYSQL_PASSWORD=${MYSQL_PASSWORD}
         volumes:
             - ./mysql:/var/lib/mysql
+        networks:
+            - nginx_to_apache
 
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
-        container_name: phpmyadmin
+        container_name: phpmyadmin_bot
         environment:
             - PMA_ARBITRARY=1
             - PMA_HOST=mariadb
         links:
             - mariadb
         ports:
-            - 8080:80
+            - 8082:80
+        networks:
+            - nginx_to_apache
 
     selenium:
        image: selenium/standalone-chrome
@@ -54,3 +63,9 @@ services:
            - php
        ports:
            - 4444:4444
+       networks:
+           - nginx_to_apache
+           
+networks:
+    nginx_to_apache:
+       external: true
