@@ -1,6 +1,6 @@
 Описание:
 При публикации нового поста в группе vkontakte, на сервер отправляется Callback API и пост записывается в БД.
-Затем по расписанию crone - запись из БД публикуется в telegram канале, странице facebook, группе odnoklassniki.
+Затем по расписанию crone - запись из БД публикуется в telegram канале, странице facebook, группе odnoklassniki, странице Twitter, канале Viber
 
 Установка:
 1. git clone git@github.com:Antoha-94/flat_polotsk_novopolotsk
